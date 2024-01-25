@@ -3,13 +3,13 @@ pipeline {
 
 
    tools {
-        jdk '11 (OpenJDK)'
+        jdk '17 (OpenJDK)'
         maven '4.0.0'
    }
 
     environment {
         // Define your Maven and Java versions
-        JAVA_HOME = tool 'JDK11'
+        JAVA_HOME = tool 'JDK17'
         MAVEN_HOME = tool 'Maven'
         PATH = "${MAVEN_HOME}/bin:${JAVA_HOME}/bin:${env.PATH}"
     }
